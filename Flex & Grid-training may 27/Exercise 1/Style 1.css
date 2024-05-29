@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.flex-container {
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+}
+.flex-container div {
+    width: 90%;
+}
+h1, p{
+    text-align: center;
+}
+p {
+    color: rgb(53, 53, 53);
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+    background-color: #eeeeee;
+    width: 100%;
+    height: 60%;
+}
+.cards-container div{
+    width: 40%;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.2);
+}
+.cards-container div div {
+    padding-bottom: 20px;
+    width: 100%;
+}
+.pictures {
+    width: 100%;
+    height: 20%;
+}
+.pictures img {
+    width: 50%;
+    height: 50%;
+}
+.Name {
+    width: 70%;
+    height: 15%;
+    text-align: center;
+    color: #3a34ca;
+    font-weight: lighter;
+}
+.first-p p{
+    font-weight: bold;
+}
+.second-p p{
+    color: #717e7c;
+    padding-left: 4%;
+    
+}
+.view-profile a {
+    text-decoration: none;
+    color: #3a34ca;
+    font-weight: bold;
+}
