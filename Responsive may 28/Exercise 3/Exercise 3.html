@@ -14,24 +14,13 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
         crossorigin="anonymous" 
-        referrerpolicy="no-referrer" />    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
-        .top-div img {
-            width: 30px;
-            height: 15px;
-            margin-top: 5px;
-        }
-        
-    </style>
+        referrerpolicy="no-referrer" />   
+    <link 
+        rel="stylesheet" 
+        href="style.css">     
 </head>
 <body>
-    <!-- -------top-div------ -->
+<!------------------------------------------------first nav------------------------------------------------------------------------------> 
     <section class="top-div">
         <div class="d-flex flex-column flex-sm-row justify-content-between py-2 px-5 bg-light border-bottom">
             <p>✉️ hello@colorlib.com</p>
@@ -61,17 +50,143 @@
         </div>
     </section>
 
+    <!------------------------------------------------second div------------------------------------------------------------------------------>
+    <section class="second-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ps-5">
+                            <li class="nav-item ps-5">
+                                <a style="color: green;" class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link active" aria-current="page" href="#">SHOP</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link active" aria-current="page" href="#">PAGES</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item ps-5">
+                                <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item pt-2">
+                                <i class="fa-solid fa-heart" style="color: #0f2852;"></i>
+                            </li>
+                            <li class="nav-item pt-2 ps-3">
+                                <i class="fa-solid fa-bag-shopping" style="color: #1a2e51;"></i>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: gray; font-size: 0.8rem;" class="nav-link active ps-4 pt-2" aria-current="page" href="#">
+                                    Item:<span style="color: #0f2852; font-size: 0.9rem; font-weight: bold;">$150.00</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section> 
+
+    <!------------------------------------------------third div--------------------------------------------------------------------------------->    
+    <section class="third div">
+        <div class="A">
+            <div class="B" >
+                <div class="C">
+                    <div class="D">
+                        <i class="fa-solid fa-list" style="color: aliceblue;">  </i> 
+                        <a style="padding-left: 1%;font-weight: bold;" >
+                            All departments 
+                            <i class="fa-solid fa-arrow-down fa-2xs" style="padding-left: 4%;"></i>
+                        </a>
+                    </div> 
+                    <div class="E">
+                            <p >Fresh Meat</p>
+                            <p >Vegetables</p>
+                            <p > Fruit & Nut Gifts</p>
+                            <p >Fresh Berries</p>
+                            <p >Ocean Foods</p>
+                            <p >Butter & Eggs</p>
+                            <p >Fastfood</p>
+                            <p >Fresh Onion</p>
+                            <p >Papayaya & Crisps</p>
+                            <p >Oatmeal</p>
+                            <p >Fresh Bananas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="F" >
+                <div class="G">
+                    <b style="padding-left: 5%;width: 20%;border: 1px solid rgb(203, 203, 203);padding-top: 1%;">All categories  <i class="fa-solid fa-arrow-down fa-2xs" style="padding-left: 4%;"></i> </b>
+                    <p style="padding-left: 3%; color: rgb(203, 203, 203);padding-top: 1%; border-top: 1px solid rgb(203, 203, 203);width: 50%;">what do you need?</p>
+                    <b style="background-color: rgb(125, 163, 74);color: aliceblue;height: 7vh;width: 10%;text-align: center; border-top: 1px solid gray;">SEARCH</b>
+                    <p style="padding-left: 5%;padding-top: 1%;"><i class="fa-solid fa-phone"></i></p>
+                    <b style="padding-left: 1%;border-top: none;">+65 11.188.888</b>
+                    <p style="padding-top: 2%;margin-left: -10%;color: gray;font-size: 12px;">Support 24/7 time</p>
+                </div>
+            </div > 
+            
+            <div style="background-image:url(images/1.jpg);grid-column-start:2 ;grid-column-end:4 ;grid-row-start:2 ;grid-row-end: 9;margin-top: 8%;">
+                <div style="width: 40%;padding-left: 10%;padding-top: 10%;">
+                    <p style="color: rgb(125, 163, 74) ;">FRUIT FRESH</p>
+                    <h1>Vegetable</h1>
+                    <h1> 100% Organic</h1>
+                    <p style="color: grey;">Free Pickup and Delivery Available</p>
+                    <br>
+                    <p style="background-color:  rgb(125, 163, 74);color: aliceblue;height: 7vh;width: 50%;text-align: center;padding-top: 4%;">SHOP NOW</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------------------------last container---------------------------------------------------------------------------------> 
+    <section class="Mohammed" style="margin-top: 5%;margin-left: 8%;"> 
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="item1">
+                            <img src="images/cat-3-removebg-preview.png" alt="">
+                            <button>VEGETABLES</button>
+                        </div>
+                        <div class="item2">
+                            <img src="images/cat-4-removebg-preview.png" alt="">
+                            <button>DRINK FRUITS</button>
+                        </div>
+                        <div class="item3">
+                            <img src="images/cat-2-removebg-preview_1.png" alt="">
+                            <button>DRINK FRUITS</button>
+                        </div>
+                        <div class="item4">
+                            <img src="images/cat-1-removebg-preview.png" alt="">
+                            <button>FRESH FRUITS</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>    
+    </section>
 
 
-
-
-
-
-
-<script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-    crossorigin="anonymous">
-</script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
