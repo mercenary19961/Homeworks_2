@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #eff5f7;
+}
+
+/* top grid  */
+.grid-container-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2%;
+    margin: 1% 2%;
+    height: 20vh;
+    width: 96%;
+}
+.span-2 {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+    background-color: #eff5f7;  
+    place-items: center left;
+    place-content: center space-around;
+    padding-top: 2%;
+    border-radius: 2px;
+}
+.mini-grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr ;
+    background-color: white;
+    color: rgb(52, 52, 52);
+    place-items: center;
+    padding-right: 10%;
+}
+.mini-grid p {
+    margin-bottom: 0;
+    padding-left: 20%;
+}
+.mini-grid span {
+    color: gray;
+    font-size: 0.7rem;
+}
+.span-1 {
+    display: grid;
+    color: white;
+    height: 80%;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #32ed80;
+    place-items: center;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+.span-1-left {
+    height: 100%;
+    width: 100%;
+    background-color: #11c15b;
+    place-self: center;
+    place-content: center;
+    border-radius: 5px 0 0 5px;
+}
+.span-1-left i {
+    background-color: #11c15b;
+    place-self: center;
+    padding-left: 40%;
+}
+#blue {
+    background-color: #448aff;
+}
+.span-1-right p {
+    margin-bottom: 0;
+}
+.span-1-right span {
+    color: whitesmoke;
+    font-size: 0.7rem;
+    
+}
+.blue-color {
+    background-color: #91baff;
+}
+.green-color {
+    background-color: #32ed80;
+}
+
+/* mid grid  */
+.grid-container-mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    margin: 1% 2%;
+    height: 45vh;
+    width: 96%;
+    background-color: #eff5f7;
+}
+.mid-container-left {
+    display: grid;
+    grid-template-rows: 15% 1fr 1fr 1fr 25%;
+    gap: 2.5px;
+    height: 100%;
+    width: 100%;
+    background-color: #eff5f7;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(99, 99, 99, 0.1);
+}
+.mid-container-left div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0.7rem;
+    padding-left: 4%;
+    background-color: white;
+}
+.mid-container-left div p {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: rgb(116, 116, 116);
+    display: inline;
+}
+.mid-container-left div i {
+    margin-right: 3%;
+    margin-left: 1%;
+    display: inline;
+}
+.mid-container-left div span {
+    color: rgb(194, 194, 194);
+    font-size: 0.6rem;
+}
+
+.mid-container-right {
+    height: 100%;
+    width: 100%;
+    background-color: #eff5f7;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 25% 1fr;
+    gap: 6% 3%;
+    place-items: center;
+}
+.mid-container-right div {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-container-right p {
+    margin-bottom: 0;
+    display: inline;
+    font-size: 0.9rem;
+    color: rgb(76, 76, 76);
+}
+.black {
+    font-size: 1.2rem;
+}
+.smaller {
+    font-size: 0.7rem !important;
+    color: gray;
+}
+.mid-container-right i {
+    margin-right: 25%;
+    display: inline;
+}
+#mid-left {
+    background-color: #ff5252;
+    color: white;
+    justify-content: baseline;
+    align-items: baseline;
+}
+#mid-right {
+    background-color: #11c15b;
+    color: white;
+    align-items: baseline;
+}
+#mid-left p {
+    color: white;
+    padding-left: 5%;
+}
+#mid-right p {
+    color: white;
+    padding-left: 5%;
+}
+
+/* bot grid */
+.grid-container-bot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 96%;
+    height: 16vh;
+    background-color: white;
+    margin: 1% 2%;
+    border-radius: 3px;
+}
+.grid-container-bot div {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 4%;
+}
+.a {
+    font-size: 0.7rem;
+    color: rgb(49, 49, 49);
+    margin-bottom: 0;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    outline: none;
+    border-radius: 8px;
+    --thumb-color: white; /* Default thumb color */
+    --value: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, var(--track-color) 0%, var(--track-color) var(--value, 50%), #ddd var(--value, 50%));
+    height: 6px;
+    border-radius: 8px;
+}
+
+input[type="range"]::-moz-range-track {
+    background: var(--track-color);
+    height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: var(--thumb-color);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px var(--box-shadow-color);
+    margin-top: -2px; /* Center the thumb vertically */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--thumb-color);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px var(--box-shadow-color);
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--thumb-color);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px var(--box-shadow-color);
+}
+
+/* Custom colors for each range input */
+.range-red {
+    --track-color: rgb(255, 57, 57);
+    --box-shadow-color: rgba(255, 0, 0, 0.5);
+}
+
+.range-blue {
+    --track-color: rgb(75, 75, 255);
+    --box-shadow-color: rgba(0, 0, 255, 0.5);
+}
+
+.range-green {
+    --track-color: rgb(4, 193, 4);
+    --box-shadow-color: rgba(0, 255, 0, 0.5);
+}
+
+.range-yellow {
+    --track-color: yellow;
+    --box-shadow-color: rgba(255, 255, 0, 0.5);
+}
