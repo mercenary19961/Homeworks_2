@@ -10,6 +10,16 @@ body {
     background-color: #eff5f7;
 }
 
+.red-dot {
+    position: relative;
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    border-radius: 50%;
+    top: 8px;
+    right: 32px;
+    z-index: 2;
+}
 /* top grid  */
 .grid-container-top {
     display: grid;
@@ -122,6 +132,14 @@ body {
     font-size: 0.7rem;
     padding-left: 4%;
     background-color: white;
+}
+.blue-line {
+    position: relative;
+    width: 3px;
+    height: 15px;
+    z-index: 1;
+    top: 45px;
+    left: 30px;
 }
 .mid-container-left div p {
     margin-bottom: 0;
