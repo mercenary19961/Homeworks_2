@@ -7,6 +7,11 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*///////////////////////////// top div  ///////////////////////////////*/
 .top-div {
     height: 6vh;
@@ -50,8 +55,8 @@
 }
 /*///////////////////////////// third div  ///////////////////////////////*/
 .third-div {
-    padding-right: 9%;
-    padding-left: 10%;
+    padding-right: 8.5%;
+    padding-left: 9%;
 }
 .third-div-container {
     display: grid;
@@ -153,7 +158,8 @@
     display: flex;
     flex-direction: column;
     background-image: url(images/1.jpg);
-    background-size: 90%;
+    background-size: 100%;
+    background-repeat: no-repeat;
     padding-left: 5%;
     padding-top: 5%;
 }
@@ -162,6 +168,7 @@
     background-color: var(--clr-green);
     color: white;
     margin: 0;
+    border: none;
 }
 .third-div-right-bot button p {
     padding-top: 5%;
@@ -174,15 +181,14 @@
 
 .fourth-container{
     display: grid;
-    grid-template-rows: repeat(4, 170px);
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     width: 100%;
-    height: 1vh;
+    height: 15vh;
     margin-top: 1%;
-    padding-right: 9%;
-    padding-left: 10%;
+    padding-right: 9.4%;
+    padding-left: 10.5%;
     padding-bottom: 2%;
-    gap: 4%;
+    gap: 4% 4%;
 }
 .fourth-container div {
     background-color: #f5f5f5;
@@ -206,6 +212,302 @@
 }
 
 /* media query  */
-@media only screen and (max-width: 480px){
-    
+
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+    .top-div p {
+        font-size: 0.65rem;
+    }
+    .flex-column {
+        height: 50px;
+    }
+    .top-div svg {
+        width: 12px;
+        height: 12px;
+    }
+    .top-div li {
+        margin-bottom: 15%;
+    }
+    .second-left p {
+        font-size: 0.8rem;
+    }
+    #home {
+        padding-left: 40%;
+    }
+    .third-div {
+        padding-right: 10.5%;
+        padding-left: 12%;
+    }
+    .third-div-right-top {
+        height: 80%;
+        font-size: 0.7rem;
+    }
+    .one a{
+        font-size: 0.7rem;
+    }
+    .three {
+        font-size: 0.7rem;
+    }
+    .four {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+    .top-div div p {
+        font-size: 0.45rem;
+        margin-left: 0;
+    }
+    .top-div img {
+        width: 12px;
+        height: 8px;
+    }
+    .flex-column {
+        height: 50px;
+    }
+    .top-div svg {
+        width: 8px;
+        height: 8px;
+    }
+    .second-left p {
+        font-size: 0.6rem;
+    }
+    #home {
+        padding-left: 40%;
+    }
+    .third-div-container {
+        height: 80%;
+        margin-bottom: 5%;
+    }
+    .third-div {
+        padding-right: 12.5%;
+        padding-left: 14%;
+    }
+    .third-div-left li a {
+        font-size: 0.45rem;
+    }
+    .third-div-right-top {
+        height: 100%;
+        font-size: 0.5rem;
+    }
+    .one a{
+        font-size: 0.5rem;
+    }
+    .three {
+        font-size: 0.5rem;
+    }
+    .four {
+        margin-left: 2%;
+        height: 28px;
+        width: 28px;
+    }
+    .five p {
+        font-size: 0.5rem !important;
+    }
+    .third-div-right-bot h1 {
+        font-size: 1.8rem;
+    }
+    .third-div-right-bot p {
+        font-size: 0.8rem !important;
+    }
+    .third-div-right-bot button {
+        width: 10%;
+    }
+    .third-div-right-bot button p {
+        font-size: 0.5rem !important;
+    }
+    .fourth-container div {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+    .top-div div p {
+        font-size: 0.35rem;
+        padding-top: 1.5%;
+    }
+    .top-div img {
+        width: 12px;
+        height: 8px;
+    }
+    .flex-column {
+        height: 50px;
+    }
+    .top-div svg {
+        width: 8px;
+        height: 8px;
+    }
+    .second-left p {
+        font-size: 0.4rem;
+    }
+    #home {
+        padding-left: 40%;
+    }
+    .third-div-container {
+        height: 80%;
+        margin-bottom: 5%;
+    }
+    .third-div {
+        padding-right: 12.5%;
+        padding-left: 14%;
+    }
+    .third-div-left li a {
+        font-size: 0.45rem;
+    }
+    .third-div-right-top {
+        height: 100%;
+        font-size: 0.5rem;
+    }
+    .one a{
+        font-size: 0.5rem;
+    }
+    .three {
+        font-size: 0.5rem;
+    }
+    .four {
+        margin-left: 2%;
+        height: 28px;
+        width: 28px;
+    }
+    .five p {
+        font-size: 0.5rem !important;
+    }
+    .third-div-right-bot h1 {
+        font-size: 1.8rem;
+    }
+    .third-div-right-bot p {
+        font-size: 0.8rem !important;
+    }
+    .third-div-right-bot button {
+        width: 10%;
+    }
+    .third-div-right-bot button p {
+        font-size: 0.5rem !important;
+    }
+    .fourth-container div {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+} 
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+    .top-div div p {
+        font-size: 0.25rem;
+        padding-top: 1.5%;
+        width: 80px;
+    }
+    .top-div ul {
+        margin-left: 20% !important;
+    }
+    .top-div i {
+        width: 30px;
+    }
+    .top-div img {
+        width: 12px;
+        height: 8px;
+    }
+    .flex-column {
+        height: 50px;
+    }
+    .top-div svg {
+        width: 8px;
+        height: 8px;
+    }
+    .second-left p {
+        font-size: 0.3rem;
+    }
+    .second-right i {
+        width: 6px;
+        height: 6px;
+        margin-right: 4px !important;
+        margin-left: 4px !important;
+    }
+    .second-right a span{
+        font-size: 0.7rem !important;
+    }
+    #home {
+        padding-left: 10%;
+    }
+    .third-div-container {
+        height: 50%;
+        margin-bottom: 5%;
+    }
+    .third-div {
+        padding-right: 12.5%;
+        padding-left: 14%;
+        height: 30vh;
+    }
+    .third-div-left {
+        height: 50%;
+    }
+    .third-div-right {
+        height: 50%;
+    }
+    .third-div-left li a {
+        font-size: 0.20rem;
+    }
+    .third-div-right-top {
+        height: 40%;
+        font-size: 0.3rem;
+    }
+    .one a{
+        font-size: 0.3rem;
+    }
+    .three {
+        font-size: 0.3rem;
+    }
+    .four {
+        margin-left: 2%;
+        height: 28px;
+        width: 28px;
+    }
+    .five p {
+        font-size: 0.3rem !important;
+    }
+    .third-div-right-bot {
+        height: 100%;
+    }
+    .third-div-right-bot h1 {
+        font-size: 0.8rem;
+    }
+    .third-div-right-bot p {
+        font-size: 0.4rem !important;
+    }
+    .third-div-right-bot button {
+        width: 10%;
+    }
+    .third-div-right-bot button p {
+        font-size: 0.3rem !important;
+    }
+    .fourth-container div {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .fourth-container {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
 }
